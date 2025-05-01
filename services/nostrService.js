@@ -10,7 +10,7 @@ class NostrService {
     this.pool = null;
     this.defaultRelays = process.env.DEFAULT_RELAYS 
       ? process.env.DEFAULT_RELAYS.split(',') 
-      : ['wss://relay.damus.io', 'wss://relay.nostr.band', 'wss://nos.lol'];
+      : ['wss://relay.angor.io', 'wss://relay2.angor.io'];
     this.timeout = parseInt(process.env.RELAY_TIMEOUT || '3000');
   }
 
